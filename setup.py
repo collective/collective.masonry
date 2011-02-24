@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '1.0b1'
 
 setup(name='collective.masonry',
       version=version,
@@ -25,7 +25,6 @@ setup(name='collective.masonry',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Products.ContentWellPortlets',
           # -*- Extra requirements: -*-
       ],
       extras_require = {'test':['plone.app.testing']},
