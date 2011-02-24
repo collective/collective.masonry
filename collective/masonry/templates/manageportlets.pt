@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="collective.masonry">
+<body>
+
+<div metal:fill-slot="main" >
+    
+    <tal:warning tal:condition="plone_view/isDefaultPageInFolder">
+        <dl class="portalMessage warning">
+            <dt i18n:translate="message_warning_below_content_area_dt">Is this really where you want to add portlets below the content?</dt>
+            <dd i18n:translate="message_warning_below_content_area_dd">If you add portlets here, they will only appear on this item. If instead you want portlets to appear on all items in this folder, 
+                <a href=""
+                   tal:attributes="href string:${plone_view/getCurrentFolderUrl}/@@manage-portletsbelowcontent"
+                   i18n:name="manage-portletsbelowcontent_link">
+                    <span i18n:translate="add_them_to_the_folder_itself">add them to the folder itself</span>
+                </a>
+            </dd>
+        <dl>
+    </tal:warning>
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="manage_portlets_below_content">Manage portlets</h1>
+    <p>
+      <a href=""
+           class="link-parent"
+           tal:attributes="href string:${context/absolute_url}"
+           i18n:translate="return_to_view">
+        Return
+      </a>
+    </p>
+    <h2>Manage portlets above the content</h2>
+    <div class="portlet-manager">
+      <span tal:replace="structure provider:masonry.above" />
+    </div>
+    <hr/>
+    <h2>Manage portlets below the content</h2>
+    <div class="portlet-manager">
+      <span tal:replace="structure provider:masonry.below" />
+    </div>
+</div>
+</body>
+</html>

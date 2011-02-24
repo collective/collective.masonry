@@ -1,0 +1,57 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.masonry">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.masonry"
+      directory="profiles/default"
+      description="Installs the collective.masonry package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  <browser:resourceDirectory
+    name="masonry"
+    directory="resources"
+    />
+  <cmf:registerDirectory name="masonry" />
+  <include package ="plone.app.portlets" />
+
+<!-- PORTLETS ABOVE AND BELOW CONTENT -->
+    <browser:viewlet
+         name="masonry.portletsabovecontent"
+         class=".viewlets.PortletsAboveViewlet"
+         manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+         layer="collective.masonry.interfaces.IMasonryLayer"
+         permission="zope2.View" 
+    />
+    <browser:viewlet
+         name="masonry.portletsbelowcontent"
+         class=".viewlets.PortletsBelowViewlet"
+         manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+         layer="collective.masonry.interfaces.IMasonryLayer"
+         permission="zope2.View" 
+    /> 
+
+<!-- add a management view -->
+    <browser:page
+         name="manage-portlets"
+         for="plone.portlets.interfaces.ILocalPortletAssignable"
+         class="plone.app.portlets.browser.manage.ManageContextualPortlets"
+         template="templates/manageportlets.pt"
+         permission="plone.app.portlets.ManagePortlets"
+         layer="collective.masonry.interfaces.IMasonryLayer"
+    />
+  <adapter
+    factory="collective.masonry.manager.PortletRenderer"
+    provides="plone.portlets.interfaces.IPortletManagerRenderer"
+    />
+
+</configure>

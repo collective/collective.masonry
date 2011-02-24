@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Set up all the new portlet managers we need above and below the content well -->
+<portlets>
+    <portletmanager 
+         name="masonry.above"
+         type="collective.masonry.interfaces.IPortletsAboveContent"
+    />
+    <portletmanager 
+         name="masonry.below"
+         type="collective.masonry.interfaces.IPortletsBelowContent"
+    />
+</portlets>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layers>
+ <layer name="MasonryPortlet"
+   interface="collective.masonry.interfaces.IMasonryLayer"
+ />
+</layers>
