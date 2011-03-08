@@ -20,10 +20,13 @@
             </dd>
         <dl>
     </tal:warning>
+  <h1 class="documentFirstHeading"  i18n:domain="plone"
+      i18n:translate="title_manage_contextual_portlets">
+      Manage portlets for
+      <q i18n:name="context_title" tal:content="context/Title">title</q>
+  </h1>
 
-    <h1 class="documentFirstHeading"
-        i18n:translate="manage_portlets_below_content">Manage portlets</h1>
-    <p>
+    <p i18n:domain="plone">
       <a href=""
            class="link-parent"
            tal:attributes="href string:${context/absolute_url}"
@@ -31,10 +34,23 @@
         Return
       </a>
     </p>
+
     <h2>Manage portlets above the content</h2>
     <div class="portlet-manager">
       <span tal:replace="structure provider:masonry.above" />
     </div>
+    <hr/>
+  <p i18n:translate="description_manage_contextual_portlets" i18n:domain="plone">
+    The portlet columns will now display only those portlets
+    explicitly assigned in this context. Use the buttons on each portlet
+    to move them up or down, delete or edit them. To add a new portlet,
+    use the drop-down list at the top of the column.
+  </p>
+
+  <p i18n:translate="description_portlets_block_unblock" i18n:domain="plone">
+      If you wish to block or unblock certain categories of portlets, you can
+      do so using the drop-down boxes.
+  </p>
     <hr/>
     <h2>Manage portlets below the content</h2>
     <div class="portlet-manager">
