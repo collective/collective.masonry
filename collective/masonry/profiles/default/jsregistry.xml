@@ -7,6 +7,11 @@
     enabled="True" expression=""  inline="False" conditionalcomment=""/>
 
  <javascript 
+    id="++resource++masonry/jquery.imagesloaded.js"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="True" expression=""  inline="False" conditionalcomment=""/>
+
+ <javascript 
     id="jquery-masonry.js"
     cacheable="True" compression="safe" cookable="True"
     enabled="True" expression=""  inline="False" conditionalcomment=""/>

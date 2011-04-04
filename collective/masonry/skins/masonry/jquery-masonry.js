@@ -1,4 +1,10 @@
 $(document).ready(function() {
-  $('#portletsAboveContent').masonry({itemSelector:'.portletWrapper'});
-  $('#portletsBelowContent').masonry({itemSelector:'.portletWrapper'});
+  var $portletAboveContainer = $('#portletsAboveContent');
+  var $portletBelowContainer = $('#portletsBelowContent');
+  $portletAboveContainer.imagesLoaded( function() {
+        $portletAboveContainer.masonry({itemSelector:'.portletWrapper'});
+  });
+  $portletBelowContainer.imagesLoaded( function() {
+        $portletBelowContainer.masonry({itemSelector:'.portletWrapper'});
+  });
 });

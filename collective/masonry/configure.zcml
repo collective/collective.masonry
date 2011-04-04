@@ -54,4 +54,6 @@
     provides="plone.portlets.interfaces.IPortletManagerRenderer"
     />
 
+  <include file="upgrades.zcml"/>
+
 </configure>
