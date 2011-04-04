@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.masonry">
+
+  <gs:upgradeStep
+    title="Upgrade collective.masonry 1010"
+    description="collective.masonry upgrade step"
+    source="1000"
+    destination="1010"
+    handler=".upgrades.upgrade_1000_to_1010"
+    profile="collective.masonry:default"/>
+
+</configure>

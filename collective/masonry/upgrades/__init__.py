@@ -1,0 +1,1 @@
+from collective.masonry.upgrades.v1010 import upgrade_1000_to_1010
