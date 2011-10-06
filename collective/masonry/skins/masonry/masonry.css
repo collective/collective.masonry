@@ -1,2 +1,10 @@
 #portletsAboveContent .portletWrapper{float:left;width:14em;}
 #portletsBelowContent .portletWrapper{float:left;width:14em;}
+#portletsAboveContent dl.portlet,
+#portletsBelowContent dl.portlet{
+  font-size:100%;
+}
+#portletsAboveContent dd,
+#portletsBelowContent dd{
+  margin-left: 0;
+}

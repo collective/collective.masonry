@@ -28,14 +28,14 @@
     <browser:viewlet
          name="masonry.portletsabovecontent"
          class=".viewlets.PortletsAboveViewlet"
-         manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+         manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
          layer="collective.masonry.interfaces.IMasonryLayer"
          permission="zope2.View" 
     />
     <browser:viewlet
          name="masonry.portletsbelowcontent"
          class=".viewlets.PortletsBelowViewlet"
-         manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+         manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
          layer="collective.masonry.interfaces.IMasonryLayer"
          permission="zope2.View" 
     /> 
