@@ -5,7 +5,7 @@ This add-on is inspeared by ContentWellPortlets_. Main differences are:
 
 * You can add as many portlets as you want above and below the content body.
 * There is only one manage portlet screen
-* Portlets are rendering with the jquery plugin masonry_
+* Portlets are rendering with the jquery plugin masonry_  v2.0.110927
 
 Credits
 =======

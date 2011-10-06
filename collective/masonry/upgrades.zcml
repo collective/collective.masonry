@@ -11,4 +11,12 @@
     handler=".upgrades.upgrade_1000_to_1010"
     profile="collective.masonry:default"/>
 
+  <gs:upgradeStep
+    title="Upgrade collective.masonry 1010"
+    description="collective.masonry upgrade step"
+    source="1010"
+    destination="1100"
+    handler=".upgrades.cook_resources"
+    profile="collective.masonry:default"/>
+
 </configure>

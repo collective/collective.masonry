@@ -1,7 +1,13 @@
 Changelog
 =========
 
-1.0b2 - (unreleased)
+1.0 - (unreleased)
+------------------
+
+- update masonry to v2.0.110927 and imagesLoaded plugin to v1.0.4
+  [toutpt]
+
+1.0b2 - (2011-04-07)
 --------------------
 
 - add jquery.imagesloaded plugin to fix images handling in masonry
