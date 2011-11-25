@@ -4,8 +4,7 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- add new classifiers
 
 1.1 (2011-10-06)
 ----------------
