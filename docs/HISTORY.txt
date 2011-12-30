@@ -5,6 +5,7 @@ Changelog
 ----------------
 
 - add new classifiers
+- update manage portlet contextual to work as default one
 
 1.1 (2011-10-06)
 ----------------
