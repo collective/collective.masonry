@@ -2,5 +2,6 @@
      i18n:domain="collective.masonry" tal:define="inmanage python:request.get('URL').endswith('@@manage-portlets') or 'portlets++' in request.get('URL')">
     <tal:block tal:condition="not:inmanage">
         <div id="portletsBelowContent" tal:content="structure provider:masonry.below" /> 
+        <div class="visualClear"/>
     </tal:block>
 </div>

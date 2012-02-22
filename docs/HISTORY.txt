@@ -4,8 +4,7 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Add visualClear block to be sure content is displayed after blocks.
 
 1.2 (2011-12-30)
 ----------------
