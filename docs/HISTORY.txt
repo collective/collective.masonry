@@ -5,6 +5,7 @@ Changelog
 ----------------
 
 - Add visualClear block to be sure content is displayed after blocks.
+- Use link for css registry.
 
 1.2 (2011-12-30)
 ----------------
