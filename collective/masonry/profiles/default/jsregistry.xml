@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
 
- <javascript id="++resource++masonry/jquery.masonry.min.js" compression="none"/>
- <javascript id="++resource++masonry/jquery.imagesloaded.js"/>
- <javascript id="jquery-masonry.js"/>
+ <javascript id="++resource++masonry/jquery.masonry.min.js" remove="True"/>
+ <javascript id="++resource++masonry/jquery.imagesloaded.js" remove="True"/>
+ <javascript id="jquery-masonry.js" remove="True"/>
+ <javascript id="++resource++collective.masonry/masonry.js"/>
 
 </object>

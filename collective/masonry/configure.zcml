@@ -18,10 +18,9 @@
       />
   <!-- -*- extra stuff goes here -*- -->
   <browser:resourceDirectory
-    name="masonry"
+    name="collective.masonry"
     directory="resources"
     />
-  <cmf:registerDirectory name="masonry" />
   <include package ="plone.app.portlets" />
 
 <!-- PORTLETS ABOVE AND BELOW CONTENT -->
