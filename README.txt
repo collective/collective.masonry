@@ -15,16 +15,16 @@ Companies
 
 |makinacom|_
 
-  * `Planet Makina Corpus <http://www.makina-corpus.org>`_
-  * `Contact us <mailto:python@makina-corpus.org>`_
+* `Planet Makina Corpus <http://www.makina-corpus.org>`_
+* `Contact Makina Corpus <mailto:python@makina-corpus.org>`_
 
 Authors
+-------
 
-  - JeanMichel FRANCOIS aka toutpt <toutpt@gmail.com>
+- JeanMichel FRANCOIS aka toutpt <toutpt@gmail.com>
 
-Contributors
-
-  - 
+.. Contributors
+.. ------------
 
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
