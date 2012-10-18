@@ -22,7 +22,18 @@
     directory="resources"
     />
   <include package ="plone.app.portlets" />
-
+  <utility
+    component=".viewlets.ModeVocabulary"
+    name="collective.masonry.vocabulary.mode"
+    />
+  <browser:page
+    name="manage-collective.masonry"
+    for="*"
+    class=".viewlets.ViewletConfigurationFormView"
+    permission="plone.app.portlets.ManagePortlets"
+    layer="collective.masonry.interfaces.IMasonryLayer"
+    />
+  <adapter factory=".viewlets.ViewletConfigurationAdapter"/>
 <!-- PORTLETS ABOVE AND BELOW CONTENT -->
     <browser:viewlet
          name="masonry.portletsabovecontent"

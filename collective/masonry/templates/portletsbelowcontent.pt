@@ -1,7 +1,7 @@
-<div id="portlets-below"
+<div id="portlets-below" tal:attributes="class view/get_mode"
      i18n:domain="collective.masonry" tal:define="inmanage python:request.get('URL').endswith('@@manage-portlets') or 'portlets++' in request.get('URL')">
-    <tal:block tal:condition="not:inmanage">
+    <div tal:attributes="class view/get_mode" tal:condition="not:inmanage">
         <div id="portletsBelowContent" tal:content="structure provider:masonry.below" /> 
         <div class="visualClear"/>
-    </tal:block>
+    </div>
 </div>

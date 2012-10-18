@@ -30,6 +30,7 @@ setup(name='collective.masonry',
           'setuptools',
           'collective.js.masonry',
           'collective.js.imageloaded',
+          'collective.registry',
           # -*- Extra requirements: -*-
       ],
       extras_require = {'test':['plone.app.testing']},

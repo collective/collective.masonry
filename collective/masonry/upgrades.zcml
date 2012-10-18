@@ -7,7 +7,7 @@
     title="Common upgrade"
     description="apply profile"
     source="*"
-    destination="1200"
+    destination="1201"
     handler=".upgrades.common"
     profile="collective.masonry:default"/>
 
