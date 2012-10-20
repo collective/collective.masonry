@@ -1,12 +1,20 @@
 <registry>
     <record name="collective.masonry.vocabulary.mode">
         <field type="plone.registry.field.Tuple">
-          <title>Masonry mode</title>
+          <title>Masonry modes</title>
           <value_type type="plone.registry.field.TextLine" />
         </field>
         <value>
-          <element>Fixed width</element>
-          <element>Fixed width and height</element>
+          <element>Fixed width 220</element>
+          <element>Min 220 Max 300</element>
+          <element>Full width</element>
+          <element>Width free</element>
         </value>
+    </record>
+    <record name="collective.masonry.defaultmode">
+        <field type="plone.registry.field.TextLine">
+          <title>Masonry default mode</title>
+        </field>
+        <value>Fixed width 220</value>
     </record>
 </registry>

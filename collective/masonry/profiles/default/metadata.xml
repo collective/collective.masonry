@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>1201</version>
+  <version>1202</version>
   <dependencies>
     <dependency>profile-collective.js.imagesloaded:default</dependency>
     <dependency>profile-collective.js.masonry:default</dependency>

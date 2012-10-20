@@ -1,10 +1,10 @@
 $(document).ready(function() {
-  var $portletAboveContainer = $('#portletsAboveContent');
-  var $portletBelowContainer = $('#portletsBelowContent');
+  var $portletAboveContainer = $('#portlets-above');
+  var $portletBelowContainer = $('#portlets-below');
   $portletAboveContainer.imagesLoaded( function() {
-        $portletAboveContainer.masonry({itemSelector:'.portletWrapper'});
+        $portletAboveContainer.masonry(masonry_configuration);
   });
   $portletBelowContainer.imagesLoaded( function() {
-        $portletBelowContainer.masonry({itemSelector:'.portletWrapper'});
+        $portletBelowContainer.masonry(masonry_configuration);
   });
 });

@@ -1,0 +1,46 @@
+/*global behavior: all portlets are in float*/
+#portlets-above .portlet,
+#portlets-above .portlet{
+    float:left;
+    font-size:100%;
+}
+/*Fix for wysiwyg img*/
+#portlets-above .portlet img,
+#portlets-above .portlet img{
+    max-width: 100%;
+}
+
+/*THEME 1: fixed-width-220*/
+#portlets-above .fixed-width-220,
+#portlets-below .fixed-width-220{
+  .portlet{
+    width: 220px;
+    margin: 10px;
+  }
+}
+
+/*THEME 2: min-220-max-300*/
+#portlets-above .min-220-max-300,
+#portlets-below .min-220-max-300{
+  .portlet{
+    min-width: 220px;
+    max-width: 300px;
+    margin: 10px;
+  }
+}
+
+/*THEME 3: full width*/
+#portlets-above .full-width,
+#portlets-below .full-width{
+  .portlet{
+    width: 100%!important;
+    margin: 0;
+  }
+}
+/*THEME 4: Width free (means no constraint except margin)*/
+#portlets-above .width-free,
+#portlets-below .width-free{
+  .portlet{
+    margin: 0;
+  }
+}
