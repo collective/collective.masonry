@@ -29,7 +29,7 @@ setup(name='collective.masonry',
       install_requires=[
           'setuptools',
           'collective.js.masonry',
-          'collective.js.imageloaded',
+          'collective.js.imagesloaded',
           'collective.registry',
           # -*- Extra requirements: -*-
       ],
