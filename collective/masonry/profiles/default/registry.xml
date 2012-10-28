@@ -8,7 +8,6 @@
           <element>Fixed width 220</element>
           <element>Min 220 Max 300</element>
           <element>Full width</element>
-          <element>Width free</element>
         </value>
     </record>
     <record name="collective.masonry.defaultmode">
