@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.2 (unreleased)
+1.2.2 (2013-01-23)
 ------------------
 
 - Add a configuration panel to define a mode for each area (above and below)
