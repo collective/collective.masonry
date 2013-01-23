@@ -2,7 +2,7 @@
 <metadata>
   <version>1202</version>
   <dependencies>
-    <dependency>profile-collective.js.imagesloaded:default</dependency>
-    <dependency>profile-collective.js.masonry:default</dependency>
+<!--     <dependency>profile-collective.js.imagesloaded:default</dependency> -->
+<!--     <dependency>profile-collective.js.masonry:default</dependency> -->
   </dependencies>
 </metadata>

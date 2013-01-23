@@ -4,6 +4,6 @@
  <javascript id="++resource++masonry/jquery.masonry.min.js" remove="True"/>
  <javascript id="++resource++masonry/jquery.imagesloaded.js" remove="True"/>
  <javascript id="jquery-masonry.js" remove="True"/>
- <javascript id="++resource++collective.masonry/masonry.js"/>
+ <javascript id="++resource++collective.masonry/masonry.js" enabled="False"/>
 
 </object>

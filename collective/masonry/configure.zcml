@@ -10,12 +10,12 @@
   <five:registerPackage package="." initialize=".initialize" />
 
   <genericsetup:registerProfile
-      name="default"
-      title="collective.masonry"
-      directory="profiles/default"
-      description="Installs the collective.masonry package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    name="default"
+    title="collective.masonry"
+    directory="profiles/default"
+    description="Installs the collective.masonry package"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
   <!-- -*- extra stuff goes here -*- -->
   <browser:resourceDirectory
     name="collective.masonry"
@@ -34,31 +34,31 @@
     layer="collective.masonry.interfaces.IMasonryLayer"
     />
   <adapter factory=".viewlets.ViewletConfigurationAdapter"/>
-<!-- PORTLETS ABOVE AND BELOW CONTENT -->
-    <browser:viewlet
-         name="masonry.portletsabovecontent"
-         class=".viewlets.PortletsAboveViewlet"
-         manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
-         layer="collective.masonry.interfaces.IMasonryLayer"
-         permission="zope2.View" 
-    />
-    <browser:viewlet
-         name="masonry.portletsbelowcontent"
-         class=".viewlets.PortletsBelowViewlet"
-         manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
-         layer="collective.masonry.interfaces.IMasonryLayer"
-         permission="zope2.View" 
-    /> 
+  <!-- PORTLETS ABOVE AND BELOW CONTENT -->
+  <browser:viewlet
+    name="masonry.portletsabovecontent"
+    class=".viewlets.PortletsAboveViewlet"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+    layer="collective.masonry.interfaces.IMasonryLayer"
+    permission="zope2.View"
+  />
+  <browser:viewlet
+    name="masonry.portletsbelowcontent"
+    class=".viewlets.PortletsBelowViewlet"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+    layer="collective.masonry.interfaces.IMasonryLayer"
+    permission="zope2.View"
+  />
 
-<!-- add a management view -->
-    <browser:page
-         name="manage-portlets"
-         for="plone.portlets.interfaces.ILocalPortletAssignable"
-         class="plone.app.portlets.browser.manage.ManageContextualPortlets"
-         template="templates/manageportlets.pt"
-         permission="plone.app.portlets.ManagePortlets"
-         layer="collective.masonry.interfaces.IMasonryLayer"
-    />
+  <!-- add a management view -->
+  <browser:page
+    name="manage-portlets"
+    for="plone.portlets.interfaces.ILocalPortletAssignable"
+    class="plone.app.portlets.browser.manage.ManageContextualPortlets"
+    template="templates/manageportlets.pt"
+    permission="plone.app.portlets.ManagePortlets"
+    layer="collective.masonry.interfaces.IMasonryLayer"
+  />
   <adapter
     factory="collective.masonry.manager.PortletRenderer"
     provides="plone.portlets.interfaces.IPortletManagerRenderer"

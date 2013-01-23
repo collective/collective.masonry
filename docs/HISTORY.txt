@@ -6,7 +6,9 @@ Changelog
 
 - Add a configuration panel to define a mode for each area (above and below)
   of each page.
-
+- Refactor html classes and css selectors
+- Do not activate jquery.masonry by default because it break layout more than
+  helps to build it.
 
 1.2.1 (2012-08-13)
 ------------------
